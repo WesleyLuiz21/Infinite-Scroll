@@ -36,4 +36,15 @@ h1 {
 }
 .img-container img {
     width: 100%;
+    margin-top: 10px;
+}
+
+/* ------------------- Media Queries */
+@media (max-width:600px ) {
+    h1 {
+        font-size: 20px;
+    }
+    .img-container {
+        margin: 10px;
+    }
 }
