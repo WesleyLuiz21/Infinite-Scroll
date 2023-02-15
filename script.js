@@ -8,6 +8,14 @@ const count = 10;
 const apiKey = 'VNZpDoTQEUSPnq7HfA8iPtEp-lJmrw8DsdMANlMJBQQ';
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
+// Helper Function to set attributes on DOM Elements
+
+function setAttributes(element, attributes) {
+    for (const key in attributes) {
+        element.setAttribute(key, attributes[key]);
+    }
+}
+
 // Create elements for links and Photos, add to DOM
 function displayPhotos() {
     // Run function for each element in photosArray
